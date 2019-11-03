@@ -13,6 +13,7 @@
 		E8935C9820F6502B00BC1F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8935C9620F6502B00BC1F64 /* Main.storyboard */; };
 		E8935C9A20F6502D00BC1F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8935C9920F6502D00BC1F64 /* Assets.xcassets */; };
 		E8935C9D20F6502D00BC1F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8935C9B20F6502D00BC1F64 /* LaunchScreen.storyboard */; };
+		E8CA6D93236F8A5900CBF86E /* playsoundsviewcontroller-audio copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA6D92236F8A5900CBF86E /* playsoundsviewcontroller-audio copy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E8935C9920F6502D00BC1F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8935C9C20F6502D00BC1F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8935C9E20F6502D00BC1F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8CA6D92236F8A5900CBF86E /* playsoundsviewcontroller-audio copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "playsoundsviewcontroller-audio copy.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E8935C9220F6502B00BC1F64 /* AppDelegate.swift */,
 				E80E573E236DF96200113EBD /* PlaySoundsViewController.swift */,
 				E8935C9420F6502B00BC1F64 /* RecordSoundsViewController.swift */,
+				E8CA6D92236F8A5900CBF86E /* playsoundsviewcontroller-audio copy.swift */,
 				E8935C9620F6502B00BC1F64 /* Main.storyboard */,
 				E8935C9920F6502D00BC1F64 /* Assets.xcassets */,
 				E8935C9B20F6502D00BC1F64 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				E8935C9520F6502B00BC1F64 /* RecordSoundsViewController.swift in Sources */,
 				E80E573F236DF96200113EBD /* PlaySoundsViewController.swift in Sources */,
 				E8935C9320F6502B00BC1F64 /* AppDelegate.swift in Sources */,
+				E8CA6D93236F8A5900CBF86E /* playsoundsviewcontroller-audio copy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
