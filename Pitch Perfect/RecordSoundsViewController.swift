@@ -36,22 +36,19 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("viewWillAppear called")
+        toggleUI(false)
     }
     
     
     // MARK: Actions
     
     @IBAction func RecordAudio(_ sender: Any) {
-        print("record button was pressed")
-        recordingLabel.text = "Recording in Progress"
-        self.recordButton.isEnabled = false
-        self.stopRecordingButton.isEnabled = true
+        toggleUI(true)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
-        print(filePath)
         
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker)
@@ -64,14 +61,25 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func stopRecording(_ sender: Any) {
-        print("stop recording button was pressed")
-        recordingLabel.text = "Tap to Record"
-        self.recordButton.isEnabled = true
-        self.stopRecordingButton.isEnabled = true
+        toggleUI(false)
         
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
+    }
+    
+    
+    func toggleUI(_ recordingState: Bool) {
+        switch recordingState {
+        case true:
+            recordingLabel.text = "Recording in Progress"
+            self.recordButton.isEnabled = false
+            self.stopRecordingButton.isEnabled = true
+        case false:
+            recordingLabel.text = "Tap to Record"
+            self.recordButton.isEnabled = true
+            self.stopRecordingButton.isEnabled = false
+        }
     }
 
     

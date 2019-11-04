@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.92549019607843142" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97647058823529409" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vap-ta-53e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Yz-Oz-KUR"/>
                             <constraint firstItem="hN5-JH-ae4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F1N-jp-K2u"/>
@@ -167,7 +167,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97647058823529409" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Mvw-yF-D6n" firstAttribute="leading" secondItem="88n-bl-4xW" secondAttribute="leading" id="3vi-J8-7bh"/>
                             <constraint firstItem="Mvw-yF-D6n" firstAttribute="top" secondItem="88n-bl-4xW" secondAttribute="top" id="GP0-a9-jaP"/>
